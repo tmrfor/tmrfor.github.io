@@ -4138,7 +4138,6 @@
 
 .w3l-stats .right-side {
   max-width: 600px;
-  margin-left: auto;
   background: var(--back-color);
   padding: 30px;
   border-radius: 10px; }

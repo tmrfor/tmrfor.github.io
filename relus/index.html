@@ -11,7 +11,7 @@
     <meta name="keywords" content="明日之森 明日之森生存 明日之森生存伺服器 明日之森minecraft minecraft伺服器">
 
 	<!-- 網頁標題 -->
-    <title>首頁 | 明日之森生存 伺服器</title>
+    <title>伺服器規範 | 明日之森生存 伺服器</title>
 
 	<!-- 連結ICON -->
     <link rel="icon" href="../images/icon.ico">
@@ -30,7 +30,7 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark stroke">
 				<!-- NAV 標誌 -->
-				<h1><a class="navbar-brand" href="../home/index.html">
+				<h1><a class="navbar-brand" href="../home/">
 					<img src="../images/nav-logo.png" >
 				</a></h1>
 				<!-- NAV 手機版 選單標誌 -->
@@ -42,10 +42,10 @@
 	  
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 					<ul class="navbar-nav ml-lg-5">
-						<li class="nav-item active">
+						<li class="nav-item @@home__active">
 							<a class="nav-link" href="../home/">首頁<span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item @@about__active">
+						<li class="nav-item @@contact__active">
 							<a class="nav-link" href="../about/">關於我們</a>
 						</li>
 						<li class="nav-item @@contact__active">
@@ -54,7 +54,7 @@
 						<li class="nav-item @@services__active">
 							<a class="nav-link" href="../serverip/">伺服器&nbsp;I&nbsp;P</a>
 						</li>
-						<li class="nav-item @@contact__active">
+						<li class="nav-item active">
 							<a class="nav-link" href="../relus/">伺服器規範</a>
 						</li>
 					</ul>
@@ -162,108 +162,58 @@ $(function () {
   <!--theme switcher dark and light mode script//-->
 
 
-<section class="w3l-main-slider" id="home">
-  <!-- main-slider -->
-  <div class="companies20-content">
-    
-    <div class="owl-one owl-carousel owl-theme">
-      <div class="item text-center">
-        <li>
-          <div class="slider-info banner-view bg bg2" data-selector=".bg.bg2">
-            <div class="banner-info">
-              <div class="container">
-                <div class="banner-info-bg mr-auto">
-					<h5>歡迎來到<br>
-					明日之森生存 伺服器</h5>
-					<p>這裡本來是一個美麗和平的森林
-					  直到某一天....
-					  大量的怪物突然湧現
-					  入侵了整個世界
-					  恭喜你活了下來
-					  快加入我們吧！
-					  救救這座森林............</p>
-					 <a class="btn btn-theme2 mt-lg-5 mt-4" href="https://discord.gg/4fP9tAp8Hx">開起你的旅途</a>
-				  </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </div>
-      <div class="item text-center">
-        <li>
-          <div class="slider-info  banner-view banner-top1 bg bg2" data-selector=".bg.bg2">
-            <div class="banner-info">
-              <div class="container">
-                <div class="banner-info-bg mr-auto">
-					<h5>歡迎來到<br>
-					明日之森生存 伺服器</h5>
-					<p>這裡本來是一個美麗和平的森林
-					  直到某一天....
-					  大量的怪物突然湧現
-					  入侵了整個世界
-					  恭喜你活了下來
-					  快加入我們吧！
-					  救救這座森林............</p>
-					 <a class="btn btn-theme2 mt-lg-5 mt-4" href="https://discord.gg/4fP9tAp8Hx">開起你的旅途</a>
-				  </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </div>
-      <div class="item text-center">
-        <li>
-          <div class="slider-info  banner-view banner-top2 bg bg2" data-selector=".bg.bg2">
-            <div class="banner-info">
-              <div class="container">
-                <div class="banner-info-bg mr-auto">
-					<img src="../images/about-img/0.png" style="width: 100vw;"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </div>
-    </div>
-  </div>
-  <script src="../assets/js/owl.carousel.js"></script>
-  <!-- script for -->
-  <script>
-    $(document).ready(function () {
-      $('.owl-one').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        responsiveClass: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          480: {
-            items: 1,
-            nav: false
-          },
-          667: {
-            items: 1,
-            nav: true
-          },
-          1000: {
-            items: 1,
-            nav: true
-          }
-        }
-      })
-    })
-  </script>
-  <!-- //script -->
-  <!-- /main-slider -->
-</section>
 
+<!-- breadcrumbs -->
+    <section class="w3l-inner-banner-main">
+        <div class="about-inner about editContent">
+            <div class="container">   
+            	<div class="breadcrumbs-sub">
+            	    <ul class="breadcrumbs-custom-path">
+            	        <li class="right-side propClone"><a href="../home/" class="editContent">首頁 <span class="fa fa-angle-right" aria-hidden="true"></span></a> <p></li>
+            	        <li class="active editContent">伺服器規範</li>
+            	    </ul>
+            	</div>
+			</div>
+		</div>
+    </section>
+<!-- breadcrumbs //-->
+
+
+<section class="w3l-stats">
+  <div class="main-w3 ">
+    <div class="container">
+        <div class="right-side">
+            <h3 class="title-big">伺服器規範</h3>
+            <p class="mt-4 para">
+				01 : 請勿罵髒話<br>
+				02 : 請勿使用透視、飛行等外掛<br>
+				03 : 請勿破壞他人建築<br>
+				04 : 請勿偷他人物品<br>
+				05 : 請勿過於頻繁的叫管理員<br>
+				06 : 請勿欺負別人<br>
+				07 : 請勿作弊<br>
+				08 : 別人不理你，請勿一直煩人<br>
+				09 : 請勿刷屏<br>
+				10: 遊玩愉快~<br>
+			</p>
+			<br><br>
+			<h3 class="title-big">違規者逞處</h3>
+			<p class="mt-4 para">
+				違反以上規則者<br>
+				違反一次會依程度區分<br>
+				通常是警告一支<br>
+				如太嚴重則會記兩支<br><br>
+				當警告達到一支 ：<br>
+				&nbsp;&nbsp;&nbsp;BAN一個星期<br><br>
+				當警告達到兩支 ：<br>
+				&nbsp;&nbsp;&nbsp;BAN兩個星期+解BAN後禁言一個星期<br><br>
+				當警告達到三支 ：<br>
+				&nbsp;&nbsp;&nbsp;視情況永BAN<br>
+			</p>
+        </div>
+		<br>
+    </div>
+</section>
 
 
 <section class="w3l-footer-29-main">
@@ -285,7 +235,7 @@ $(function () {
 					<li><a  target="_blank" href="https://line.me/ti/g2/hS_3SS2xTrkdW1txGxZn4w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">Line</a></li>
 					<li><a  target="_blank" href="https://discord.gg/4fP9tAp8Hx">Discord</a></li>
 					<li><a  target="_blank" href="https://www.facebook.com/groups/939683233647115/?ref=share">Facebook</a></li>
-					<li><a href=""></a></li>
+					<li><a  target="_blank" href=""></a></li>
 					<li><a href=""></a></li>
 				</ul>
 			</div>
