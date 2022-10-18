@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-hant-tw">
+  <head>
+    <!-- 基本META  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="refresh" content="600;url=../home/">
+
+		<!-- 簡介 關鍵字 --> 
+	<meta name="description" content="這裡本來是一個美麗和平的森林  直到某一天....  大量的怪物突然湧現  入侵了整個世界  恭喜你活了下來  快加入我們吧！ 救救這座森林............">
+    <meta name="keywords" content="明日之森 明日之森生存 明日之森生存伺服器 明日之森minecraft minecraft伺服器">
+
+	<!-- 網頁標題 -->
+    <title>伺服器 I P | 明日之森生存 伺服器</title>
+
+	<!-- 連結ICON -->
+    <link rel="icon" href="../images/icon.ico">
+	
+    <!-- 連結CSS -->
+    <link rel="stylesheet" href="../assets/css/style-starter.css">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body id="home">
+<section class=" w3l-header-4 header-sticky">
+	<!-- HEADER -->
+	<header id="site-header" class="fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark stroke">
+				<!-- NAV 標誌 -->
+				<h1><a class="navbar-brand" href="../home/">
+					<img src="../images/nav-logo.png" >
+				</a></h1>
+				<!-- NAV 手機版 選單標誌 -->
+				<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+					<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+					
+				</button>
+	  
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ml-lg-5">
+						<li class="nav-item @@home__active">
+							<a class="nav-link" href="../home/">首頁<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item @@about__active">
+							<a class="nav-link" href="../about/">關於我們</a>
+						</li>
+						<li class="nav-item @@contact__active">
+							<a class="nav-link" href="../servertour/">伺服器簡介</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="../serverip/">伺服器&nbsp;I&nbsp;P</a>
+						</li>
+						<li class="nav-item @@contact__active">
+							<a class="nav-link" href="../relus/">伺服器規範</a>
+						</li>
+					</ul>
+				<ul class="navbar-nav ml-auto">
+						<li class="nav-item ml-4">
+							<a class="nav-link phone" href="../servermap/">伺服器小地圖</a>
+						</li>
+					</ul>
+				</div>
+				        <!-- toggle switch for light and dark theme -->
+						<div class="mobile-position">
+							<label class="theme-selector">
+							  <input type="checkbox" id="themeToggle">
+							  <i class="gg-sun"></i>
+							  <i class="gg-moon"></i>
+							</label>
+						  </div>
+						  <!-- //toggle switch for light and dark theme -->
+			</nav>
+		</div>
+	  </header>
+	<!--/header-->
+</section>
+<script src="../assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+<!--bootstrap working-->
+<script src="../assets/js/bootstrap.min.js"></script>
+<!--bootstrap working//-->
+<!--/MENU-JS-->
+<script>
+	$(window).on("scroll", function () {
+	  var scroll = $(window).scrollTop();
+  
+	  if (scroll >= 80) {
+		$("#site-header").addClass("nav-fixed");
+	  } else {
+		$("#site-header").removeClass("nav-fixed");
+	  }
+	});
+  
+	//Main navigation Active Class Add Remove
+	$(".navbar-toggler").on("click", function () {
+	  $("header").toggleClass("active");
+	});
+	$(document).on("ready", function () {
+	  if ($(window).width() > 991) {
+		$("header").removeClass("active");
+	  }
+	  $(window).on("resize", function () {
+		if ($(window).width() > 991) {
+		  $("header").removeClass("active");
+		}
+	  });
+	});
+  </script>
+  <!--//MENU-JS-->
+<!-- disable body scroll which navbar is in active -->
+<script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!--theme switcher dark and light mode script-->
+<script>
+	const bodyElement = document.querySelector('body');
+	const themeToggle = document.querySelector('#themeToggle');
+	const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
+  
+	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : userPreference(darkModeMql);
+  
+	if (currentTheme) {
+	  bodyElement.classList.add(currentTheme);
+  
+	  if (currentTheme === 'dark') {
+		themeToggle.checked = true;
+	  }
+	}
+  
+	function userPreference(e) {
+	  if (e.matches) {
+		bodyElement.classList.add("dark");
+		return "dark"
+	  } else {
+		bodyElement.classList.remove("dark");
+		return ""
+	  }
+	}
+  
+	darkModeMql.addListener(userPreference);
+  
+	function themeSwitcher(e) {
+	  if (e.target.checked) {
+		bodyElement.classList.add('dark');
+		localStorage.setItem('theme', 'dark');
+	  } else {
+		bodyElement.classList.remove('dark');
+		localStorage.setItem('theme', '');
+	  }
+	}
+  
+	themeToggle.addEventListener('change', themeSwitcher);
+  </script>
+  <!--theme switcher dark and light mode script//-->
+
+
+
+<!-- breadcrumbs -->
+<section class="w3l-inner-banner-main">
+    <div class="about-inner services editContent">
+        <div class="container">   
+
+        <div class="breadcrumbs-sub">
+            <ul class="breadcrumbs-custom-path">
+                <li class="right-side propClone"><a href="../home/" class="editContent">首頁<span class="fa fa-angle-right" aria-hidden="true"></span></a> <p></li>
+                <li class="active editContent">伺服器IP</li>
+            </ul>
+            </div>
+</div>
+</div>
+</section>
+<!-- breadcrumbs //-->
+
+
+<section class="w3l-contact-info-main" id="contact">
+    <div class="contact-sec	editContent">
+        <div class="container">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1 class="text-center" style="color: var(--header-title-color);">tmrfor.net</h1>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+        </div>
+    </div>
+</section>
+<section class="w3l-footer-29-main">
+	<div class="footer-29 py-5 ">
+	  <div class="container">
+		<div class="grid-col-4 footer-top-29">
+			<div class="footer-list-29 footer-1">
+				<h2 class="footer-title-29">聯絡我們</h2>
+				<ul>
+					<li><p><span class="fa fa-map-marker"></span>tmrfor.net</p></li>
+					<li><a  target="_blank" href="https://discord.gg/4fP9tAp8Hx"><span class="fa fa-phone"></span>Discord</a></li>
+					<li><a href="mailto:lloyd9ninja@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>lloyd9ninja@gmail.com</a></li>
+					<li><a href="mailto:haimusang@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>haimusang@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="footer-list-29 footer-2">
+				<ul>
+					<h6 class="footer-title-29">社群連結</h6>
+					<li><a  target="_blank" href="https://line.me/ti/g2/hS_3SS2xTrkdW1txGxZn4w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">Line</a></li>
+					<li><a  target="_blank" href="https://discord.gg/4fP9tAp8Hx">Discord</a></li>
+					<li><a  target="_blank" href="https://www.facebook.com/groups/939683233647115/?ref=share">Facebook</a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-list-29 footer-3">
+				<div class="properties">
+					<h6 class="footer-title-29">伺服器檔案</h6>
+					<div class="images-col">
+					<ul>
+						<li><a href="">版本 : java1.8.9~1.19.2</a></li>
+						<li><a href="">最高人數限制 ： 20</a></li>
+						<li><a href="">創立時間 : 2021/7/25</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<div class="footer-list-29 footer-4">
+				<ul>
+					<h6 class="footer-title-29">站內連結</h6>
+					<li><a href="../home/">首頁</a></li>
+					<li><a href="../about/">關於我們</a></li>
+					<li><a href="../servertour/">伺服器簡介</a>
+					<li><a href="../serverip/">伺服器 I  P</a></li>
+					<li><a href="../relus/">伺服器規範</a></li>
+					<li><a href="../servermap/">伺服器小地圖</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class=" bottom-copies text-center">
+			<p class="copy-footer-29"><a  target="_blank" href="https://github.com/tmrfor/web">©</a>明日之森生存 伺服器 @tmrfor2021 | 由 <a href="//www.youtube.com/channel/UCmQD8e9ZnIy9F39wAmvAalA">Haimu</a> 架設 維護</p>
+			<p class="copy-footer-29">按照 Mojang AB 註冊商標​之產品<a  target="_blank" href="//minecraft.net"> MINECRAFT </a>中<a  target="_blank" href="//www.minecraft.net/zh-hant/terms#terms-brand_guidelines"> 商業使用準則 </a>授權</p>
+		</div>
+		</div>
+	</div>
+  </section>
+
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+	<span class="fa fa-chevron-up"></span>
+</button>
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("movetop").style.display = "block";
+		} else {
+			document.getElementById("movetop").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<!-- /move top -->
+
+</body>
+
+</html>
